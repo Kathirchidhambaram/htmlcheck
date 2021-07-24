@@ -50,14 +50,33 @@ hr{
     top: 31vh;
 }
 
+.secret-number-container{
+    width: 100%;
+    position: absolute;
+    top: 35vh;
+    display: flex;
+    justify-content: center;
+}
+
 .secret-number{
-    position: relative;
-    top: 42vh;
+    width: 21vh;
+    display: flex;
     color: #000000;
     background-color: #eee;
     padding: 3vh 5vh;
     font-size: 11vh;
     order: 2;
     z-index: 1;
-    left: 7vh;
 }
+
+@media only screen and (max-width: 450px) {
+    .range{
+        font-size: 1.5vh
+    }
+    h1{
+        font-size: 5vh;
+    }
+    .secret-number-container{
+        padding: 2vh 4vh;
+    }
+  }
