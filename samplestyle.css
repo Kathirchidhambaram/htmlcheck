@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+  color: #eee;
+  background-color: #222;
+  font-family: 'Press Start 2P', sans-serif;
+  margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.btn{
+    font-family: inherit;
+    width: 24vh;
+    height: 9vh;
+    font-size: 3vh;
+}
+
+.again{
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+
+.range{
+    position: relative;
+    height: 5vh;
+    top: 2vh;
+    order: 3;
+}
+
+h1{
+    width: 100%;
+    position: absolute;
+    top: 15vh;
+    text-align: center;
+    font-size: 7vh;
+}
+
+hr{
+    position: relative;
+    top: 31vh;
+}
+
+.secret-number-container{
+    width: 100%;
+    position: absolute;
+    top: 35vh;
+    display: flex;
+    justify-content: center;
+}
+
+.secret-number{
+    width: 21vh;
+    display: flex;
+    color: #000000;
+    background-color: #eee;
+    padding: 3vh 5vh;
+    font-size: 11vh;
+    order: 2;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 450px) {
+    .range{
+        font-size: 1.5vh
+    }
+    h1{
+        font-size: 5vh;
+    }
+    .secret-number-container{
+        padding: 2vh 4vh;
+    }
+  }
